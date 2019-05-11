@@ -1,0 +1,15 @@
+https://www.terraform.io/intro/index.html
+
+https://learn.hashicorp.com/terraform/getting-started/install.html
+
+https://learn.hashicorp.com/terraform/getting-started/variables.html
+
+https://learn.hashicorp.com/terraform/getting-started/outputs.html
+
+https://learn.hashicorp.com/terraform/getting-started/modules.html
+
+https://www.terraform.io/docs/state/index.html
+
+https://www.terraform.io/docs/state/remote.html
+
+https://www.terraform.io/docs/backends/index.html
