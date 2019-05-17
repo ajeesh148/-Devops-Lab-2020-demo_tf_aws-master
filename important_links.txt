@@ -1,3 +1,5 @@
+AWS:
+
 https://www.terraform.io/intro/index.html
 
 https://learn.hashicorp.com/terraform/getting-started/install.html
@@ -13,3 +15,13 @@ https://www.terraform.io/docs/state/index.html
 https://www.terraform.io/docs/state/remote.html
 
 https://www.terraform.io/docs/backends/index.html
+
+GCP:
+
+https://cloud.google.com/sdk/install
+
+https://cloud.google.com/sdk/docs/quickstarts
+
+https://github.com/GoogleCloudPlatform/terraform-google-examples
+
+https://dzone.com/articles/build-a-kubernetes-cluster-on-gcp-with-terraform
