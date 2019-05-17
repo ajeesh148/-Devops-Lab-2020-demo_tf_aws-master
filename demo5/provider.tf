@@ -1,5 +1,5 @@
-provider “google” {
-credentials = “${file(“terraform-account.json”)}”
-project = “my-demo-gcp”
-region = “us-central1”
+provider "google" {
+credentials = "${file("terraform-account.json")}"
+project = "aerial-rarity-205120"
+region = "us-central1"
 }

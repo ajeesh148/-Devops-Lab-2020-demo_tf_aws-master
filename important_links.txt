@@ -25,3 +25,5 @@ https://cloud.google.com/sdk/docs/quickstarts
 https://github.com/GoogleCloudPlatform/terraform-google-examples
 
 https://dzone.com/articles/build-a-kubernetes-cluster-on-gcp-with-terraform
+
+https://codelabs.developers.google.com/codelabs/hashicorp-terraform-gce-vm/index.html?index=..%2F..hashiconf-us-18#0
