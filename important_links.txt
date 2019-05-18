@@ -29,3 +29,5 @@ https://dzone.com/articles/build-a-kubernetes-cluster-on-gcp-with-terraform
 https://codelabs.developers.google.com/codelabs/hashicorp-terraform-gce-vm/index.html?index=..%2F..hashiconf-us-18#0
 
 https://medium.com/slalom-technology/a-complete-gcp-environment-with-terraform-c087190366f0
+
+https://medium.com/@josephbleroy/using-terraform-with-google-cloud-platform-part-1-n-6b5e4074c059
