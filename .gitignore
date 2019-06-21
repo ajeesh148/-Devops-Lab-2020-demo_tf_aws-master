@@ -3,3 +3,5 @@
 */terraform-account.json
 */terraform.tfstate.backup
 */terraform.tfstate
+demo2/variables.tf
+demo2/my_aws_key.pub

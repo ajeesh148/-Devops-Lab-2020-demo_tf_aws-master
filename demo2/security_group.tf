@@ -20,17 +20,17 @@ resource "aws_security_group" "allow_ping" {
     cidr_blocks = ["0.0.0.0/0"]
   }
 }
-#resource "aws_security_group" "allow_jenkins" {
-#  name        = "allow-jenkins"
-#  description = "Allow jenkins inbound traffic"
+resource "aws_security_group" "allow_jenkins" {
+  name        = "allow-jenkins"
+  description = "Allow jenkins inbound traffic"
 
-#  ingress {
-#    from_port   = 8080
- #   to_port     = 8080
- #   protocol    = "tcp"
- #   cidr_blocks = ["0.0.0.0/0"]
-  #}
-#}
+ ingress {
+   from_port   = 8080
+   to_port     = 8080
+   protocol    = "tcp"
+   cidr_blocks = ["0.0.0.0/0"]
+  }
+}
 resource "aws_security_group" "allow_outbound" {
   name        = "allow-all-outbound"
   description = "Allow all outbound traffic"

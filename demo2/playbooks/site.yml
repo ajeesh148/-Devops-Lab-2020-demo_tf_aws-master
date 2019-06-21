@@ -1,0 +1,10 @@
+---
+- name: Setting up CI CD tools
+  hosts: all
+  gather_facts: true
+  become: true
+  tasks:
+  roles:
+    - role: git
+    - role: docker
+    - role: jenkins      

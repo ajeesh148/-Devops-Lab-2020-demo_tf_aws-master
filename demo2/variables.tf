@@ -14,5 +14,5 @@ variable "aws_region" {
 
 variable ssh_private_key {
   description = "File location of the ssh private key"
-  default     = "<private key>"
+  default     = "/home/akbharat/.ssh/my_aws_key"
 }
