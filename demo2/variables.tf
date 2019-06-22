@@ -1,11 +1,11 @@
 # AWS Config
 
 variable "aws_access_key" {
-  default = ""
+  default = "PUT YOUR KEY HERE"
 }
 
 variable "aws_secret_key" {
-  default = ""
+  default = "PUT YOUR KEY HERE"
 }
 
 variable "aws_region" {
