@@ -6,7 +6,7 @@ resource "aws_instance" "my-cicd-instance" {
   security_groups = [
     "${aws_security_group.allow_ssh.name}",
     "${aws_security_group.allow_outbound.name}",
-  #  "${aws_security_group.allow_jenkins.name}"
+    "${aws_security_group.allow_jenkins.name}"
 ]
 
   tags {

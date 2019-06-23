@@ -7,5 +7,5 @@
   roles:
     - role: git
     - role: docker
-#   - role: jenkins 
+    - role: jenkins 
  
