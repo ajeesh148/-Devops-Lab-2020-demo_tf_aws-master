@@ -1,6 +1,6 @@
 ---
 - name: Install wget nc telnet & java 
-  yum:
+  apt:
     name:
     - wget
     - java-1.8.0-openjdk
@@ -18,7 +18,7 @@
     key: https://pkg.jenkins.io/redhat/jenkins.io.key
 
 - name: Install Jenkins
-  yum:
+  apt:
     name:
     - jenkins-2.181-1.1.noarch
 

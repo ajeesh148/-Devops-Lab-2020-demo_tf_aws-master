@@ -1,29 +1,21 @@
-resource "aws_instance" "my-cicd-instance" {
-  ami             = "${data.aws_ami.amazon-linux-2.id}"
-  instance_type   = "t2.medium"
-  key_name = "${aws_key_pair.my_aws_key.key_name}"
+# Specify the provider and access details
+provider "aws" {
+  access_key = var.aws_access_key
+  secret_key = var.aws_secret_key
+  region     = var.aws_region
 
-  security_groups = [
-    "${aws_security_group.allow_ssh.name}",
-    "${aws_security_group.allow_outbound.name}",
-    "${aws_security_group.allow_jenkins.name}"
-]
+  version = "~> 2.0"
+}
 
-  tags {
-    Name = "cicd-instance"
-  }
+resource "aws_instance" "swarm-master" {
+  ami                    = var.ami
+  instance_type          = var.instance_type
+  key_name               = aws_key_pair.my_aws_key.key_name
+  user_data              = file(var.bootstrap_path)
+  vpc_security_group_ids = [aws_security_group.sgswarm.id]
 
-provisioner "remote-exec" {
-    inline = ["sudo yum -y update"]
-
-    connection {
-     type        = "ssh"
-      user        = "ec2-user"
-      private_key = "${file(var.ssh_private_key)}"
-    }
-  }
-
-    provisioner "local-exec" {
-    command = "ansible-playbook -u ec2-user -i '${self.public_ip},' --private-key ${var.ssh_private_key} playbooks/site.yml" 
+  tags = {
+    Name = "jenkins-host"
   }
 }
+
